@@ -1,0 +1,31 @@
+int main()
+{
+
+	std::array<std::array<char, 3>, 3>  board;   // make sure  to initialize the array here
+	char player_x = ‘X’;
+ 	char player_y = ‘Y’;
+
+	printBoard(board);   	 // Write the function to print the board
+
+	char turn = player_x;
+	
+	do {
+		// take_input (implement input by x,y corodinates)
+	
+		updateBoard(board)
+
+		printBoard()
+	
+		hasWinner = check_win(board) // return true if turn if found as winner
+		if (hasWinner == true) {
+			// save winner whose turn it is
+		}
+		else {
+			is_game_over =check_board_complete(board) // should return true if complete
+		}
+		turn = next_turn()  // if current is 'X' change to 'O' or vice versa 
+
+	} while( condition  )  // update condition to check where winner is found or board is complete
+
+	//print turn or draw
+}
